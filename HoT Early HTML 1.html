@@ -1,0 +1,393 @@
+<html><head><title>Harmony of Twilight Character Maker</title>
+<link rel="stylesheet" href="HoT Early CSS.css"></head>
+<body>
+  
+<header style="font-size: 36;">Welcome to the Harmony of Twilight character generator!</header>
+<p>Harmony of Twilight is a TTRPG system that goes from Levels 1 to 10. Now, getting into a new TTRPG (Tabletop Roleplaying Game) can be a daunting task. But not this time. With the help of this generator, you can have a Level 1 character put together in <strong>less than 10 minutes!</strong> Let's get started.</p>
+  
+  
+  <header style="font-size: 26;">First, let's assign your character's stats.</header> 
+  <p>These are general measures of a character's raw talent in a given area. Your stats will range from 1-4 when making a character, with 2 considered the average for most ordinary beings. When you create your character, you'll be able to manually assign each one using the dropdown below. Bear in mind that the game was designed around players starting with <strong>a total of 15</strong> in their Stats.</p>
+<p>Power: Your ability to exert sheer force upon others. Very important for those bearing heavy armor and weapons.</p>  
+  <select>  
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option> 
+ </select>
+<p>Endurance: Your ability to take damage and keep on fighting. Fairly important for all characters.</p>
+ <select>  
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option> 
+ </select>
+ <p>Agility: Your natural deftness and coordination. Very important for users of light weaponry and armor.   
+</p>
+<select>  
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option> 
+ </select>
+  <p>Mind: A measure of accumulated knowledge and mental acuity. Very important for certain spellcasters.</p>
+  <select>  
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option> 
+ </select>
+  <p>Spirit: Attunement to and awareness of the world around you. Very important for archers and certain spellcasters</p>
+  <select>  
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option> 
+ </select>
+  <p>Heart: The influence you exert on others and sheer force of presence. Very important for certain spellcasters.</p>
+  <select>  
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option> 
+ </select>
+  <header style="font-size: 26;padding-top: 14;">Next, let's choose your race.</header>
+  <p>There are many wondrous races available to play in Harmony of Twilight, but we'll keep the selection small to keep things simple. Each Race, while highlighted, will have a short summary pop up below the dropdown giving you a brief description of what they're like.</p>
+  <select id="Species">
+    <option> </option>
+    <option value="human">Human</option>
+    <option value="elf">Elf</option>
+    <option value="dwarf">Dwarf</option> 
+    <option value="titan">Titanid</option>
+    <option value="snake">Viperkin</option>
+    <option value="derg">Dramael</option>
+  </select>
+    <section id="humanSummary" class="speciesSummary hidden">
+    <p>Humans can be found in all corners of the world, from the snowy wastes of Arcetis to the far eastern hills of Irua and even the cold forests of Lochiun and the burning sands of Drakna. Short though their lives may be, and in spite of lacking any remarkable physical features, humans are defined in large part by their determined natures and the strength they display when they finally stop bickering over petty things. If a human says they will see something done, believe them.</p>
+    </section>
+    <section id="elfSummary" class="speciesSummary hidden">
+    <p>Elves. Flighty, Free-spirited, and just a little haughty. With lives that span 250 to 260 years, some would consider Elves living history lessons... if you can convince them to teach you. Most elves will be found in the western forests of Murau and Lochiun, though it's not uncommon to see them travelling most anywhere. Outside of the forests in the west, most elves settle down around Kateris and Delthos, where fine crafts abound.</p>
+    </section>
+    <section id="dwarfSummary" class="speciesSummary hidden">
+    <p>Short, stout, and sturdy. Dwarves are a merry and industrious folk, filling their days with all manner of productivity... and their bellies with a fair amout of ale and mead. Their busy nature grants them a long life of just over two centuries, which would provide them almost the same perspective as elves if they ever chose to travel. It's extremely uncommon to see dwarves outside of the mountains of Obsias, though the scant few that choose to leave usually settle in Irua, Delthos, or Kateris.</p>
+    </section>
+    <section id="titanSummary" class="speciesSummary hidden">
+    <p>The world itself may sound as though it trembles when a Titanid is moved to anger. Distant descendants of the giant clans, these mighty men tower over their contemporaries, and often remain just as aloof for their century-and-a-half lifespans as their sheer size would have you believe. In spite of that, they do have an appreciation for many finer things, as titanids are the only people who've spread across the continent anywhere near as much as humans in spite of their much smaller population.</p>
+    </section>
+    <section id="snakeSummary" class="speciesSummary hidden">
+    <p>Viperkin. Seldom seen outside of the miserable jungles of Theamai and rumored sightings in Draknan deserts, the serpent people are perhaps the most fearsome of all. The only common thing that links them is a humanoid torso and the tail of a serpent, but beyond that could be anything from wicked venomous fangs to hair that grows in the same manner as a cobra's hood. Viperkin live and die by the hunt, and so rarely live to see half of a century, though ones that choose a more peaceful live can live to be 80.</p>
+    </section>
+    <section id="dergSummary" class="speciesSummary hidden">
+    <p>Dramael. They seem to be relatives of the Elves, though most of either that you ask would deny the thought and grow angry at the idea. Dramael would seem to be elves at a quick and uncaring glance, but a closer inspection reveals their true nature; clothing adjusted to accomodate for a hidden set of wings; a gauntlet of metallic scales that lead up their arms. Descended of the king of dragons, Dramael are almost never seen outside of Drakna, Kateris, and Irua. They've been observed with strong loyalty to tribe and family, and what few notes have been made about them estimate their lives to be about 120-130 years.</p>
+    </section>
+  <header style="font-size: 26;padding-top: 14;">With your race chosen, now you'll choose your racial feats!</header>
+  <p>Harmony of Twilight is a system based on modularity and choices, and this will be your first introduction to what that means. Each race has a selection of Feats available exclusively to them, and you get to pick 3 when making a character!</p>
+    <section id="humanFeats" class="racialFeats hidden">
+    <select id="humanFeat1">
+    <option> </option>
+    <option value="of_many_trades1">Of Many Trades</option>
+    <option value="determination1">Determination</option>
+    <option value="armament_training1">Armament Training</option>
+    <option value="simple_magic1">Simple Magic</option>
+    </select>
+<p id="of_many_trades1" class="featSummary1 hidden">When you take this Feat, you gain Training in any 2 skills of your choice.</p>
+<p id="determination1" class="featSummary1 hidden">When you would fail a Skill Check that you are Trained or an Expert in, you may reroll your circumstance die for the check and take the higher result. You may use this Feat twice, and regain a use whenever you take a Reprieve.</p>
+<p id="armament_training1" class="featSummary1 hidden">Throughout your travels, you've stumbled into circumstances that allow you access to some simple weapon training. Choose a Weapon Class. You become Trained in Simple Weapons of that Class.</p>
+<p id="simple_magic1" class="featSummary1 hidden">At some point in your life, you've managed to pick up some random scraps of magic. Choose a Tier I spell. You learn that spell, and may cast it once without using a Spell Slot. Once you cast that spell without using a spell slot, you cannot cast it in that manner again until you complete a Reprieve.</p>
+    <select id="humanFeat2">
+    <option> </option>
+    <option value="of_many_trades2">Of Many Trades</option>
+    <option value="determination2">Determination</option>
+    <option value="armament_training2">Armament Training</option>
+    <option value="simple_magic2">Simple Magic</option>
+    </select>
+<p id="of_many_trades2" class="featSummary2 hidden">When you take this Feat, you gain Training in any 2 skills of your choice.</p>
+<p id="determination2" class="featSummary2 hidden">When you would fail a Skill Check that you are Trained or an Expert in, you may reroll your circumstance die for the check and take the higher result. You may use this Feat twice, and regain a use whenever you take a Reprieve.</p>
+<p id="armament_training2" class="featSummary2 hidden">Throughout your travels, you've stumbled into circumstances that allow you access to some simple weapon training. Choose a Weapon Class. You become Trained in Simple Weapons of that Class.</p>
+<p id="simple_magic2" class="featSummary2 hidden">At some point in your life, you've managed to pick up some random scraps of magic. Choose a Tier I spell. You learn that spell, and may cast it once without using a Spell Slot. Once you cast that spell without using a spell slot, you cannot cast it in that manner again until you complete a Reprieve.</p>
+    <select id="humanFeat3">
+    <option> </option>
+    <option value="of_many_trades3">Of Many Trades</option>
+    <option value="determination3">Determination</option>
+    <option value="armament_training3">Armament Training</option>
+    <option value="simple_magic3">Simple Magic</option>
+    </select>
+<p id="of_many_trades3" class="featSummary3 hidden">When you take this Feat, you gain Training in any 2 skills of your choice.</p>
+<p id="determination3" class="featSummary3 hidden">When you would fail a Skill Check that you are Trained or an Expert in, you may reroll your circumstance die for the check and take the higher result. You may use this Feat twice, and regain a use whenever you take a Reprieve.</p>
+<p id="armament_training3" class="featSummary3 hidden">Throughout your travels, you've stumbled into circumstances that allow you access to some simple weapon training. Choose a Weapon Class. You become Trained in Simple Weapons of that Class.</p>
+<p id="simple_magic3" class="featSummary3 hidden">At some point in your life, you've managed to pick up some random scraps of magic. Choose a Tier I spell. You learn that spell, and may cast it once without using a Spell Slot. Once you cast that spell without using a spell slot, you cannot cast it in that manner again until you complete a Reprieve.</p>
+</section>
+    <section id="elfFeats" class="racialFeats hidden">
+    <select id="elfFeat1">
+    <option> </option>
+    <option value="keen_eyes1">Keen Eyes</option>
+    <option value="long_draw1">Long Draw</option>
+    <option value="short_draw1">Short Draw</option>
+    <option value="graceful_charm1">Graceful Charm</option>
+    </select>
+<p id="keen_eyes1" class="featSummary1 hidden">When you take this feat, you awaken your dormant sharp eyesight, and gain a +1 bonus to Visibility.</p>
+<p id="long_draw1" class="featSummary1 hidden">When you take this feat, Ranged Weapon Attacks made with Bows have their maximum range increased by 30 feet.</p>
+<p id="short_draw1" class="featSummary1 hidden">When you take this feat, your skill with Bows in close range improves. Your minimum range with bows decreases by 10 feet.</p>
+<p id="graceful_charm1" class="featSummary1 hidden">Your natural allure grants you Training in Charm Checks.</p>
+    <select id="elfFeat2">
+    <option> </option>
+    <option value="keen_eyes2">Keen Eyes</option>
+    <option value="long_draw2">Long Draw</option>
+    <option value="short_draw2">Short Draw</option>
+    <option value="graceful_charm2">Graceful Charm</option>
+    </select>
+<p id="keen_eyes2" class="featSummary2 hidden">When you take this feat, you awaken your dormant sharp eyesight, and gain a +1 bonus to Visibility.</p>
+<p id="long_draw2" class="featSummary2 hidden">When you take this feat, Ranged Weapon Attacks made with Bows have their maximum range increased by 30 feet.</p>
+<p id="short_draw2" class="featSummary2 hidden">When you take this feat, your skill with Bows in close range improves. Your minimum range with bows decreases by 10 feet.</p>
+<p id="graceful_charm2" class="featSummary2 hidden">Your natural allure grants you Training in Charm Checks.</p>
+    <select id="elfFeat3">
+    <option> </option>
+    <option value="keen_eyes3">Keen Eyes</option>
+    <option value="long_draw3">Long Draw</option>
+    <option value="short_draw3">Short Draw</option>
+    <option value="graceful_charm3">Graceful Charm</option>
+    </select>
+<p id="keen_eyes3" class="featSummary3 hidden">When you take this feat, you awaken your dormant sharp eyesight, and gain a +1 bonus to Visibility.</p>
+<p id="long_draw3" class="featSummary3 hidden">When you take this feat, Ranged Weapon Attacks made with Bows have their maximum range increased by 30 feet.</p>
+<p id="short_draw3" class="featSummary3 hidden">When you take this feat, your skill with Bows in close range improves. Your minimum range with bows decreases by 10 feet.</p>
+<p id="graceful_charm3" class="featSummary3 hidden">Your natural allure grants you Training in Charm Checks.</p>
+</section>
+    <section id="dwarfFeats" class="racialFeats hidden">
+    <select id="dwarfFeat1">
+    <option> </option>
+    <option value="poison_resistance1">Poison Resistance</option>
+    <option value="miners_strike1">Miner's Strike</option>
+    <option value="eye_for_baubles1">Eye For Baubles</option>
+    <option value="smithys_blood1">Smithy's Blood</option>
+    </select>
+<p id="poison_resistance1" class="featSummary1 hidden">Be it from constant exposure to stagnant cave air, or from a love of good drink, you gain Resistance: Venom (2)</p>
+<p id="miners_strike1" class="featSummary1 hidden">You have much experience striking walls with intent to destroy. When using Club-type weapons, your attacks deal an extra 1d4 damage to structures and enemies with the [Construct] tag.</p>
+<p id="eye_for_baubles1" class="featSummary1 hidden">Generations of mining have given you a hereditary sense of the value of gems. You can discern the value of any gem you see with a 10% margin of error, no Checks required.</p>
+<p id="smithys_blood1" class="featSummary1 hidden">Centuries of working with the hammer and anvil have given you a genetic resilience against heat. When you take this Feat, you gain Resistance: Burn (2).</p>
+    <select id="dwarfFeat2">
+    <option> </option>
+    <option value="poison_resistance2">Poison Resistance</option>
+    <option value="miners_strike2">Miner's Strike</option>
+    <option value="eye_for_baubles2">Eye For Baubles</option>
+    <option value="smithys_blood2">Smithy's Blood</option>
+    </select>
+<p id="poison_resistance2" class="featSummary2 hidden">Be it from constant exposure to stagnant cave air, or from a love of good drink, you gain Resistance: Venom (2)</p>
+<p id="miners_strike2" class="featSummary2 hidden">You have much experience striking walls with intent to destroy. When using Club-type weapons, your attacks deal an extra 1d4 damage to structures and enemies with the [Construct] tag.</p>
+<p id="eye_for_baubles2" class="featSummary2 hidden">Generations of mining have given you a hereditary sense of the value of gems. You can discern the value of any gem you see with a 10% margin of error, no Checks required.</p>
+<p id="smithys_blood2" class="featSummary2 hidden">Centuries of working with the hammer and anvil have given you a genetic resilience against heat. When you take this Feat, you gain Resistance: Burn (2).</p>
+    <select id="dwarfFeat3">
+    <option> </option>
+    <option value="poison_resistance3">Poison Resistance</option>
+    <option value="miners_strike3">Miner's Strike</option>
+    <option value="eye_for_baubles3">Eye For Baubles</option>
+    <option value="smithys_blood3">Smithy's Blood</option>
+    </select>
+<p id="poison_resistance3" class="featSummary3 hidden">Be it from constant exposure to stagnant cave air, or from a love of good drink, you gain Resistance: Venom (2)</p>
+<p id="miners_strike3" class="featSummary3 hidden">You have much experience striking walls with intent to destroy. When using Club-type weapons, your attacks deal an extra 1d4 damage to structures and enemies with the [Construct] tag.</p>
+<p id="eye_for_baubles3" class="featSummary3 hidden">Generations of mining have given you a hereditary sense of the value of gems. You can discern the value of any gem you see with a 10% margin of error, no Checks required.</p>
+<p id="smithys_blood3" class="featSummary3 hidden">Centuries of working with the hammer and anvil have given you a genetic resilience against heat. When you take this Feat, you gain Resistance: Burn (2).</p>
+</section>
+    <section id="titanFeats" class="racialFeats hidden">
+    <select id="titanFeat1">
+    <option> </option>
+    <option value="colossal_vitality1">Colossal Vitality</option>
+    <option value="powerful_arms1">Powerful Arms</option>
+    <option value="towering_force1">Towering Force</option>
+    <option value="titanic_sanctuary1">Titanic Sanctuary</option>
+    </select>
+<p id="colossal_vitality1" class="featSummary1 hidden">So massive are you that your sheer size requires more vital energy. Your maximum HP increases by an amount equal to your level.</p>
+<p id="powerful_arms1" class="featSummary1 hidden">Learning to better harness your massive frame, you utilize it to your advantage with weapons. When using 1-2 Handed Weapons, you can use the alternative damage die when attacking with only one hand.</p>
+<p id="towering_force1" class="featSummary1 hidden">Your sheer size can be leveraged to your advantage. For one minute, you can treat your Strength stat as though it were 1 higher. You can use this feature once, and regain that use when you finish a Reprieve.</p>
+<p id="titanic_sanctuary1" class="featSummary1 hidden">Your massive size inspires your allies in the face of fear. Creatures you choose within 20 feet of you have a base d6 Circumstance Die when making Resolve checks.</p>
+    <select id="titanFeat2">
+    <option> </option>
+    <option value="colossal_vitality2">Colossal Vitality</option>
+    <option value="powerful_arms2">Powerful Arms</option>
+    <option value="towering_force2">Towering Force</option>
+    <option value="titanic_sanctuary2">Titanic Sanctuary</option>
+    </select>
+<p id="colossal_vitality2" class="featSummary2 hidden">So massive are you that your sheer size requires more vital energy. Your maximum HP increases by an amount equal to your level.</p>
+<p id="powerful_arms2" class="featSummary2 hidden">Learning to better harness your massive frame, you utilize it to your advantage with weapons. When using 1-2 Handed Weapons, you can use the alternative damage die when attacking with only one hand.</p>
+<p id="towering_force2" class="featSummary2 hidden">Your sheer size can be leveraged to your advantage. For one minute, you can treat your Strength stat as though it were 1 higher. You can use this feature once, and regain that use when you finish a Reprieve.</p>
+<p id="titanic_sanctuary2" class="featSummary2 hidden">Your massive size inspires your allies in the face of fear. Creatures you choose within 20 feet of you have a base d6 Circumstance Die when making Resolve checks.</p>
+    <select id="titanFeat3">
+    <option> </option>
+    <option value="colossal_vitality3">Colossal Vitality</option>
+    <option value="powerful_arms3">Powerful Arms</option>
+    <option value="towering_force3">Towering Force</option>
+    <option value="titanic_sanctuary3">Titanic Sanctuary</option>
+    </select>
+<p id="colossal_vitality3" class="featSummary3 hidden">So massive are you that your sheer size requires more vital energy. Your maximum HP increases by an amount equal to your level.</p>
+<p id="powerful_arms3" class="featSummary3 hidden">Learning to better harness your massive frame, you utilize it to your advantage with weapons. When using 1-2 Handed Weapons, you can use the alternative damage die when attacking with only one hand.</p>
+<p id="towering_force3" class="featSummary3 hidden">Your sheer size can be leveraged to your advantage. For one minute, you can treat your Strength stat as though it were 1 higher. You can use this feature once, and regain that use when you finish a Reprieve.</p>
+<p id="titanic_sanctuary3" class="featSummary3 hidden">Your massive size inspires your allies in the face of fear. Creatures you choose within 20 feet of you have a base d6 Circumstance Die when making Resolve checks.</p>
+</section>
+    <section id="snakeFeats" class="racialFeats hidden">
+    <select id="snakeFeat1">
+    <option> </option>
+    <option value="venomous_bite1">Venomous Bite</option>
+    <option value="powerful_tail1">Powerful Tail</option>
+    <option value="adders_stealth1">Adder's Stealth</option>
+    <option value="venom_veined1">Venom Veined</option>
+    </select>
+<p id="venomous_bite1" class="featSummary1 hidden">When you hit a creature with your Bite Attack, you inflict an additional 1d4 Venom Damage to the target</p>
+<p id="powerful_tail1" class="featSummary1 hidden">The muscles in your tail grow much stronger. If you are currently grappling a Medium or smaller creature, you can use an action to coil your tail around them and deal 1d6 Impact Damage.</p>
+<p id="adders_stealth1" class="featSummary1 hidden">When in forested or jungle terrain, your default Circumstance Die for Stealth Checks becomes a d10, and cannot be lower than a d8.</p>
+<p id="venom_veined1" class="featSummary1 hidden">The venom running through your veins makes you extremely resilient to other toxins. You gain resistance: Venom(2)</p>
+    <select id="snakeFeat2">
+    <option> </option>
+    <option value="venomous_bite2">Venomous Bite</option>
+    <option value="powerful_tail2">Powerful Tail</option>
+    <option value="adders_stealth2">Adder's Stealth</option>
+    <option value="venom_veined2">Venom Veined</option>
+    </select>
+<p id="venomous_bite2" class="featSummary2 hidden">When you hit a creature with your Bite Attack, you inflict an additional 1d4 Venom Damage to the target</p>
+<p id="powerful_tail2" class="featSummary2 hidden">The muscles in your tail grow much stronger. If you are currently grappling a Medium or smaller creature, you can use an action to coil your tail around them and deal 1d6 Impact Damage.</p>
+<p id="adders_stealth2" class="featSummary2 hidden">When in forested or jungle terrain, your default Circumstance Die for Stealth Checks becomes a d10, and cannot be lower than a d8.</p>
+<p id="venom_veined2" class="featSummary2 hidden">The venom running through your veins makes you extremely resilient to other toxins. You gain resistance: Venom(2)</p>
+<select id="snakeFeat3">
+    <option> </option>
+    <option value="venomous_bite3">Venomous Bite</option>
+    <option value="powerful_tail3">Powerful Tail</option>
+    <option value="adders_stealth3">Adder's Stealth</option>
+    <option value="venom_veined3">Venom Veined</option>
+    </select>
+<p id="venomous_bite3" class="featSummary3 hidden">When you hit a creature with your Bite Attack, you inflict an additional 1d4 Venom Damage to the target</p>
+<p id="powerful_tail3" class="featSummary3 hidden">The muscles in your tail grow much stronger. If you are currently grappling a Medium or smaller creature, you can use an action to coil your tail around them and deal 1d6 Impact Damage.</p>
+<p id="adders_stealth3" class="featSummary3 hidden">When in forested or jungle terrain, your default Circumstance Die for Stealth Checks becomes a d10, and cannot be lower than a d8.</p>
+<p id="venom_veined3" class="featSummary3 hidden">The venom running through your veins makes you extremely resilient to other toxins. You gain resistance: Venom(2)</p>
+</section>
+    <section id="dergFeats" class="racialFeats hidden">
+    <select id="dergFeat1">
+    <option> </option>
+    <option value="great_lunge1">Great Lunge</option>
+    <option value="draconic_claw1">Draconic Claw</option>
+    <option value="scale_guard1">Scale Guard</option>
+    <option value="pack_hunter1">Pack Hunter</option>
+    </select>
+<p id="great_lunge1" class="featSummary1 hidden">This feat represents a practiced leap using your powerful legs. As an action, you can build power and unleash it in one single leap. The leap propels you 15 feet in any direction you choose. If you make a Melee Weapon or Unarmed Attack immediately after this Lunge, it deals an additional die of damage.</p>
+<p id="draconic_claw1" class="featSummary1 hidden">With this feat, you gain the ability to manifest wicked claws on your hands (no action required). Unarmed Attacks made with these claws deal 1d6+Power Slicing Damage instead of the normal damage for an Unarmed Attack.</p>
+<p id="scale_guard1" class="featSummary1 hidden">This feat hardens the scales lining your arms, granting you a +1 to your AV while not wearing Medium or Heavy Armor.</p>
+<p id="pack_hunter1" class="featSummary1 hidden">You are skilled in fighting alongside allies. When you hit a creature that's adjacent to an ally that isn't incapacitated with a Melee Attack, you deal an additional 2 damage to that creature.</p>
+<select id="dergFeat2">
+    <option> </option>
+    <option value="great_lunge2">Great Lunge</option>
+    <option value="draconic_claw2">Draconic Claw</option>
+    <option value="scale_guard2">Scale Guard</option>
+    <option value="pack_hunter2">Pack Hunter</option>
+    </select>
+<p id="great_lunge2" class="featSummary2 hidden">This feat represents a practiced leap using your powerful legs. As an action, you can build power and unleash it in one single leap. The leap propels you 15 feet in any direction you choose. If you make a Melee Weapon or Unarmed Attack immediately after this Lunge, it deals an additional die of damage.</p>
+<p id="draconic_claw2" class="featSummary2 hidden">With this feat, you gain the ability to manifest wicked claws on your hands (no action required). Unarmed Attacks made with these claws deal 1d6+Power Slicing Damage instead of the normal damage for an Unarmed Attack.</p>
+<p id="scale_guard2" class="featSummary2 hidden">This feat hardens the scales lining your arms, granting you a +1 to your AV while not wearing Medium or Heavy Armor.</p>
+<p id="pack_hunter2" class="featSummary2 hidden">You are skilled in fighting alongside allies. When you hit a creature that's adjacent to an ally that isn't incapacitated with a Melee Attack, you deal an additional 2 damage to that creature.</p>
+<select id="dergFeat3">
+    <option> </option>
+    <option value="great_lunge3">Great Lunge</option>
+    <option value="draconic_claw3">Draconic Claw</option>
+    <option value="scale_guard3">Scale Guard</option>
+    <option value="pack_hunter3">Pack Hunter</option>
+    </select>
+<p id="great_lunge3" class="featSummary3 hidden">This feat represents a practiced leap using your powerful legs. As an action, you can build power and unleash it in one single leap. The leap propels you 15 feet in any direction you choose. If you make a Melee Weapon or Unarmed Attack immediately after this Lunge, it deals an additional die of damage.</p>
+<p id="draconic_claw3" class="featSummary3 hidden">With this feat, you gain the ability to manifest wicked claws on your hands (no action required). Unarmed Attacks made with these claws deal 1d6+Power Slicing Damage instead of the normal damage for an Unarmed Attack.</p>
+<p id="scale_guard3" class="featSummary3 hidden">This feat hardens the scales lining your arms, granting you a +1 to your AV while not wearing Medium or Heavy Armor.</p>
+<p id="pack_hunter3" class="featSummary3 hidden">You are skilled in fighting alongside allies. When you hit a creature that's adjacent to an ally that isn't incapacitated with a Melee Attack, you deal an additional 2 damage to that creature.</p>
+</section>
+
+<header style="font-size: 26;padding-top: 14;">Fantastic! With your Stats, Race, and Racial Feats chosen, the time has come for you to choose your class! Pick a class from the Dropdown below, and a short synopsis of the class will pop up.</header>
+<select id="Job">
+    <option> </option>
+    <option value="Armsmaster">Armsmaster</option>
+    <option value="Skirmisher">Skirmisher</option>
+    <option value="Seer">Seer</option>
+    <option value="Psion">Psion</option>
+    <option value="Arcanist">Arcanist</option>
+    <option value="Druid">Druid</option>
+    <option value="Holy">Holy</option>
+</select>
+<section id="Armsmaster" class="JobSummary hidden">
+<p>The Armsmaster. A martial master, trained in a vast array of weapons and armor. Fighting on the frontlines, Armsmasters dish out consistent streams of damage while shrugging off hits.</p>
+<p>As an Armsmaster, you gain Training in 2 of the following skills:</p>
+
+<p>You also gain Training in Basic Weapons from any two weapon Classes:</p>
+
+<p>Additionally, you gain Training in Basic and Advanced weapons from a third weapon Class:</p>
+
+<p>Finally, you gain Training in Basic armor of one Class:</p>
+
+<p>Now that you've picked all of your Trainings, you get to choose your Martial Techniques, the things that set you apart from other Armsmasters. Choose 3 Techniques from the 5 listed below.</p>
+
+</section>
+<section id="Skirmisher" class="JobSummary hidden">
+<p>Moving across the battlefield, Skirmishers specialize in quick, single strikes with devastating power. Nimble and flighty, a good Skirmisher is very hard to pin down, though they can be in trouble if caught off-guard.</p>
+<p>As a Skirmisher, you gain Training in 3 of the following skills:</p>
+
+<p>You also gain Training in Basic Weapons from two of the following Classes:</p>
+
+<p>You additionally gain Training in Basic Weapons from one of the following Classes:</p>
+
+<p>Finally, you gain training in Basic Armor of one of the following Classes:</p>
+
+<p>Now that you've picked all of your Trainings, you get to choose your Martial Techniques, the things that set you apart from other Skirmishers. Choose 3 Techniques from the 5 listed below.</p>
+
+</section>
+<section id="Seer" class="JobSummary hidden">
+<p>Seers are a peculiar sort. Using a strange Mystical Energy, they gain insight into the future, glimpse luck and misfortune alike, and strike down enemies with the power of the sun, moon, and stars.</p>
+<p>As a Seer, you gain Training in 5 of the following skills:</p>
+
+<p>You also gain Training in Basic Weapons from one of the following Classes:</p>
+
+<p>Additionally, you gain Training in Basic Armor of the Class below:</p>
+
+<p>With your Trainings chosen, you now get to choose your Seeing Arts, the Mystical Techniques that let you see beyond what others can. Choose 2 from the 4 below.</p>
+
+</section>
+<section id="Psion" class="JobSummary hidden">
+<p>Psions are quite tricky to pin down. As Mystics, much like Seers, they harness Mystical Energy... though in this case, their powers deal with the mind. They can facilitate silent communication, or manipulate items around them.</p>
+<p>As a Psion, you gain Training in 4 of the following skills:</p>
+
+<p>You also gain Training in Basic Weapons from one of the following Classes:</p>
+
+<p>With your Trainings selected, you now get to choose your Psionic Arts, the Mystical Techniques that let you harness the power of the mind. Choose 3 from the 5 below.</p>
+
+</section>
+<section id="Arcanist" class="JobSummary hidden">
+<p>Perhaps the most Archetypical of the magic-wielders, Arcanists are what the lay-person would associate with the term "mage." Though their spells may not be the most potent, the variety of spells they know makes them useful in many circumstances.</p>
+<p>As an Arcanist, you gain Training in 2 of the following skills:</p>
+
+<p>You also gain Training in Basic Weapons from one of the following Classes:</p>
+
+<p>Knowing now what Trainings you wield, it's time for you to choose the spells that you've studied to set you on this path. Choose 6 of the spells listed below.</p>
+
+</section>
+<section id="Druid" class="JobSummary hidden">
+<p>Druids- Speakers of nature and voices of the wild. Wielding magic that's less tamed and more so directed, Druids cause havoc for foes in groups and can weaken them as well.</p>
+<p>As a Druid, you gain Training in 3 of the following Skills:</p>
+
+<p>You also gain Training in Basic Weapons from one of the following Classes:</p>
+
+<p>You additionally gain Training in Basic Armor from one of the following Classes:</p>
+
+<p>Knowing now what Trainings you wield, it's time for you to choose your spells, the first boons of the boundless wilds. Choose 4 of the spells listed below.</p>
+
+</section>
+<section id="Holy" class="JobSummary hidden">
+<p>The Holies- Servants to the gods that rule the world, directing fragments of their divine power. A Holy on the battlefield is a force to be feared as they devastate single foes and bolster allies in equal measure.</p>
+<p>As a Holy, you gain Training in 3 of the following Skills:</p>
+
+<p>You also gain Training in Basic Weapons from one of the following Classes:</p>
+
+<p>Finally, you gain Training in Basic Armor from one of the following Classes:</p>
+
+<p>Knowing now what Trainings you wield, it's time for you to choose the spells that are your first gifts from the Gods. Choose 4 of the spells listed below.</p>
+
+</section>
+
+
+
+
+
+
+
+<script src="HoT JS.js"> </script>
+
+</body></html>
