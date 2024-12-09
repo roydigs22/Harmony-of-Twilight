@@ -3,6 +3,7 @@
  function selectSpecies(event) {
    showFromGroup("speciesSummary", event.target.value+"Summary");
    showFromGroup("racialFeats", event.target.value+"Feats");
+   document.getElementById("chosenRace").innerHTML = event.target.value;
  }
 speciesDrop.addEventListener("change", selectSpecies); //When values change in speciesDrop, call function selectSpecies.
 
@@ -20,45 +21,64 @@ speciesDrop.addEventListener("change", selectSpecies); //When values change in s
 
  function selectjob(event) {
    showFromGroup("jobSummary", event.target.value);
+   classHP = chpTable[event.target.value]
+   document.getElementById("startHP").innerHTML = 2 * (classHP + endVal)
+   //document.getElementById("chosenClass").innerHTML = event.target.value;
  }
 
+ function selectEndurance(event) {
+   endVal = parseInt(event.target.value)
+   document.getElementById("startHP").innerHTML = 2 * (classHP + endVal)
+ }
+document.getElementById("endurance").addEventListener("change", selectEndurance)
+ classHP = 0
+ endVal = 0
+ chpTable = {
+   "Armsmaster": 10,
+   "Skirmisher": 8,
+   "Seer": 8,
+   "Psion": 8,
+   "Arcanist": 6,
+   "Holy": 6,
+   "Druid": 6
+}
 
 
-document.getElementById("humanFeat1").addEventListener("change", selectfeat1); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("HumanFeat1").addEventListener("change", selectfeat1); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("humanFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("HumanFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("humanFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("HumanFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("elfFeat1").addEventListener("change", selectfeat1) //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("ElfFeat1").addEventListener("change", selectfeat1) //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("elfFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("ElfFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("elfFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant. 
+document.getElementById("ElfFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant. 
 
-document.getElementById("dwarfFeat1").addEventListener("change", selectfeat1); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("DwarfFeat1").addEventListener("change", selectfeat1); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("dwarfFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("DwarfFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("dwarfFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("DwarfFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("titanFeat1").addEventListener("change", selectfeat1); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("TitanidFeat1").addEventListener("change", selectfeat1); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("titanFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("TitanidFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("titanFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("TitanidFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("snakeFeat1").addEventListener("change", selectfeat1); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("ViperkinFeat1").addEventListener("change", selectfeat1); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("snakeFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("ViperkinFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("snakeFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("ViperkinFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("dergFeat1").addEventListener("change", selectfeat1); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("DramaelFeat1").addEventListener("change", selectfeat1); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("dergFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("DramaelFeat2").addEventListener("change", selectfeat2); //Identifies list in dropdown "Species" and assigns to constant.
 
-document.getElementById("dergFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant.
+document.getElementById("DramaelFeat3").addEventListener("change", selectfeat3); //Identifies list in dropdown "Species" and assigns to constant.
 
 document.getElementById("Job").addEventListener("change", selectjob);
 
