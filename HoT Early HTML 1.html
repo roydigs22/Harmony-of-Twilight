@@ -2,55 +2,61 @@
 <link rel="stylesheet" href="HoT Early CSS.css"></head>
 <body>
   
-<header style="font-size: 36;">Welcome to the Harmony of Twilight character generator!</header>
-<p>Harmony of Twilight is a TTRPG system that goes from Levels 1 to 10. Now, getting into a new TTRPG (Tabletop Roleplaying Game) can be a daunting task. But not this time. With the help of this generator, you can have a Level 1 character put together in <strong>less than 10 minutes!</strong> Let's get started.</p>
+<header style="font-size: 40;">Welcome to the Harmony of Twilight character generator!</header>
+<p>Harmony of Twilight is a TTRPG (Tabletop Roleplaying Game) system that goes from Levels 1 to 10. Now, getting into a new TTRPG can be a daunting task. But not this time. With the help of this generator, you can have a Level 1 character put together in <strong>less than 10 minutes!</strong> Let's get started.</p>
   
   
-  <header style="font-size: 26;">First, let's assign your character's stats.</header> 
+  <header style="font-size: 30;">First, let's assign your character's stats.</header> 
   <p>These are general measures of a character's raw talent in a given area. Your stats will range from 1-4 when making a character, with 2 considered the average for most ordinary beings. When you create your character, you'll be able to manually assign each one using the dropdown below. Bear in mind that the game was designed around players starting with <strong>a total of 15</strong> in their Stats.</p>
 <p>Power: Your ability to exert sheer force upon others. Very important for those bearing heavy armor and weapons.</p>  
-  <select id="power">  
+  <select id="power">
+  <option>0</option>  
   <option>1</option>
   <option>2</option>
   <option>3</option>
   <option>4</option> 
  </select>
 <p>Endurance: Your ability to take damage and keep on fighting. Fairly important for all characters.</p>
- <select id="endurance">  
+ <select id="endurance"> 
+  <option>0</option> 
   <option>1</option>
   <option>2</option>
   <option>3</option>
   <option>4</option> 
  </select>
  <p>Agility: Your natural deftness and coordination. Very important for users of light weaponry and armor.</p>   
-<select id="agility">  
+<select id="agility">
+  <option>0</option>  
   <option>1</option>
   <option>2</option>
   <option>3</option>
   <option>4</option> 
  </select>
   <p>Mind: A measure of accumulated knowledge and mental acuity. Very important for certain spellcasters.</p>
-  <select id="mind">  
+  <select id="mind">
+  <option>0</option>  
   <option>1</option>
   <option>2</option>
   <option>3</option>
   <option>4</option> 
  </select>
   <p>Spirit: Attunement to and awareness of the world around you. Very important for archers and certain spellcasters</p>
-  <select id="spirit">  
+  <select id="spirit">
+  <option>0</option>  
   <option>1</option>
   <option>2</option>
   <option>3</option>
   <option>4</option> 
  </select>
   <p>Heart: The influence you exert on others and sheer force of presence. Very important for certain spellcasters.</p>
-  <select id="heart">  
+  <select id="heart">
+  <option>0</option>  
   <option>1</option>
   <option>2</option>
   <option>3</option>
   <option>4</option> 
  </select>
-  <header style="font-size: 26;padding-top: 14;">Next, let's choose your race.</header>
+  <header style="font-size: 30;padding-top: 14;">Next, let's choose your race.</header>
   <p>There are many wondrous races available to play in Harmony of Twilight, but we'll keep the selection small to keep things simple. Each Race, while highlighted, will have a short summary pop up below the dropdown giving you a brief description of what they're like.</p>
   <select id="Species">
     <option> </option>
@@ -79,7 +85,7 @@
     <section id="DramaelSummary" class="speciesSummary hidden">
     <p>Dramael. They seem to be relatives of the Elves, though most of either that you ask would deny the thought and grow angry at the idea. Dramael would seem to be elves at a quick and uncaring glance, but a closer inspection reveals their true nature; clothing adjusted to accomodate for a hidden set of wings; a gauntlet of metallic scales that lead up their arms. Descended of the king of dragons, Dramael are almost never seen outside of Drakna, Kateris, and Irua. They've been observed with strong loyalty to tribe and family, and what few notes have been made about them estimate their lives to be about 120-130 years.</p>
     </section>
-  <header style="font-size: 26;padding-top: 14;">With your race chosen, now you'll choose your racial feats!</header>
+  <header style="font-size: 30;padding-top: 14;">With your race chosen, now you'll choose your racial feats!</header>
   <p>Harmony of Twilight is a system based on modularity and choices, and this will be your first introduction to what that means. Each race has a selection of Feats available exclusively to them, and you get to pick 3 when making a character!</p>
     <section id="HumanFeats" class="racialFeats hidden">
     <select id="HumanFeat1">
@@ -196,7 +202,7 @@
     </select>
 <p id="colossal_vitality1" class="featSummary1 hidden">So massive are you that your sheer size requires more vital energy. Your maximum HP increases by an amount equal to your level.</p>
 <p id="powerful_arms1" class="featSummary1 hidden">Learning to better harness your massive frame, you utilize it to your advantage with weapons. When using 1-2 Handed Weapons, you can use the alternative damage die when attacking with only one hand.</p>
-<p id="towering_force1" class="featSummary1 hidden">Your sheer size can be leveraged to your advantage. For one minute, you can treat your Strength stat as though it were 1 higher. You can use this feature once, and regain that use when you finish a Reprieve.</p>
+<p id="towering_force1" class="featSummary1 hidden">Your sheer size can be leveraged to your advantage. For one minute, you can treat your Power stat as though it were 1 higher. You can use this feature once, and regain that use when you finish a Reprieve.</p>
 <p id="titanic_sanctuary1" class="featSummary1 hidden">Your massive size inspires your allies in the face of fear. Creatures you choose within 20 feet of you have a base d6 Circumstance Die when making Resolve checks.</p>
     <select id="TitanidFeat2">
     <option> </option>
@@ -207,7 +213,7 @@
     </select>
 <p id="colossal_vitality2" class="featSummary2 hidden">So massive are you that your sheer size requires more vital energy. Your maximum HP increases by an amount equal to your level.</p>
 <p id="powerful_arms2" class="featSummary2 hidden">Learning to better harness your massive frame, you utilize it to your advantage with weapons. When using 1-2 Handed Weapons, you can use the alternative damage die when attacking with only one hand.</p>
-<p id="towering_force2" class="featSummary2 hidden">Your sheer size can be leveraged to your advantage. For one minute, you can treat your Strength stat as though it were 1 higher. You can use this feature once, and regain that use when you finish a Reprieve.</p>
+<p id="towering_force2" class="featSummary2 hidden">Your sheer size can be leveraged to your advantage. For one minute, you can treat your Power stat as though it were 1 higher. You can use this feature once, and regain that use when you finish a Reprieve.</p>
 <p id="titanic_sanctuary2" class="featSummary2 hidden">Your massive size inspires your allies in the face of fear. Creatures you choose within 20 feet of you have a base d6 Circumstance Die when making Resolve checks.</p>
     <select id="TitanidFeat3">
     <option> </option>
@@ -218,7 +224,7 @@
     </select>
 <p id="colossal_vitality3" class="featSummary3 hidden">So massive are you that your sheer size requires more vital energy. Your maximum HP increases by an amount equal to your level.</p>
 <p id="powerful_arms3" class="featSummary3 hidden">Learning to better harness your massive frame, you utilize it to your advantage with weapons. When using 1-2 Handed Weapons, you can use the alternative damage die when attacking with only one hand.</p>
-<p id="towering_force3" class="featSummary3 hidden">Your sheer size can be leveraged to your advantage. For one minute, you can treat your Strength stat as though it were 1 higher. You can use this feature once, and regain that use when you finish a Reprieve.</p>
+<p id="towering_force3" class="featSummary3 hidden">Your sheer size can be leveraged to your advantage. For one minute, you can treat your Power stat as though it were 1 higher. You can use this feature once, and regain that use when you finish a Reprieve.</p>
 <p id="titanic_sanctuary3" class="featSummary3 hidden">Your massive size inspires your allies in the face of fear. Creatures you choose within 20 feet of you have a base d6 Circumstance Die when making Resolve checks.</p>
 </section>
     <section id="ViperkinFeats" class="racialFeats hidden">
@@ -292,7 +298,7 @@
 <p id="pack_hunter3" class="featSummary3 hidden">You are skilled in fighting alongside allies. When you hit a creature that's adjacent to an ally that isn't incapacitated with a Melee Attack, you deal an additional 2 damage to that creature.</p>
 </section>
 
-<header style="font-size: 26;padding-top: 14;">Fantastic! With your Stats, Race, and Racial Feats chosen, the time has come for you to choose your class! Pick a class from the Dropdown below, and a short synopsis of the class will pop up.</header>
+<header style="font-size: 30;padding-top: 14;">Fantastic! With your Stats, Race, and Racial Feats chosen, the time has come for you to choose your class! Pick a class from the Dropdown below, and a short synopsis of the class will pop up.</header>
 <select id="Job">
     <option> </option>
     <option value="Armsmaster">Armsmaster</option>
