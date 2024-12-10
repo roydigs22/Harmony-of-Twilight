@@ -23,7 +23,7 @@ speciesDrop.addEventListener("change", selectSpecies); //When values change in s
    showFromGroup("jobSummary", event.target.value);
    classHP = chpTable[event.target.value]
    document.getElementById("startHP").innerHTML = 2 * (classHP + endVal)
-   //document.getElementById("chosenClass").innerHTML = event.target.value;
+   document.getElementById("chosenClass").innerHTML = event.target.value;
  }
 
  function selectEndurance(event) {
